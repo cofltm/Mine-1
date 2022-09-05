@@ -16,6 +16,8 @@ public class App {
         gen.scigrade = 88;
         gen.genave = 88.43;
 
+        gen.sayMyName();
+
         Info person = new Info();
 
         person.firstname = "Cherish";
