@@ -6,4 +6,7 @@ public class Grades {
     int scigrade;
     double genave;
 
+    public void sayMyName(){
+      System.out.println("Hello I am "+ name);
+    }
 }
