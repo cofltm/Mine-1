@@ -1,4 +1,46 @@
-println("Hello Java! This is a non-static method.");
+public class App {
+    public static void main(String[] args) throws Exception {
+
+        App myApp = new App();
+
+        // Non-static method call
+        myApp.showHelloJava();
+
+        // Static method call
+        showHelloWorld();
+
+        // Non-static method call with parameter
+        myApp.showName("Cherish");
+
+        // Static method call with parameter
+        showAge(20);
+
+        // Static method call with two parameters
+        showNameAndAge("Cherish", 18);
+
+        // Non-static method call with two parameters that returns an int
+        int sum = myApp.add(1, 1);
+        System.out.println(sum);
+
+        // Static method call with two parameters that returns an int
+        int difference = subtract(1, 1);
+        System.out.println(difference);
+
+        int times = multiply(1, 1);
+        System.out.println(times);
+
+        int divide = division(1, 1);
+        System.out.println(divide);
+
+        boolean equal= isEqual(1,1);
+        System.out.println(equal);
+
+
+    }
+
+    // Non-static method
+    void showHelloJava() {
+        System.out.println("Hello Java! This is a non-static method.");
     }
 
     // Static method
@@ -43,4 +85,10 @@ println("Hello Java! This is a non-static method.");
         int z = x / y;
         return z;
     }
+
+    static boolean isEqual(int x, int y){
+        boolean z = (x == y);
+        return z;
+    }
+    
 }
