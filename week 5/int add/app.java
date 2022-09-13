@@ -65,4 +65,14 @@ public class App {
         int z = x - y;
         return z;
     }
+
+    static int multiply(int x, int y){
+        int z = x * y;
+        return z;
+    }
+
+    static int division(int x, int y){
+        int z = x / y;
+        return z;
+    }
 }
