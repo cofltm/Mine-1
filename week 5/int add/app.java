@@ -1,36 +1,4 @@
-public class App {
-    public static void main(String[] args) throws Exception {
-
-        App myApp = new App();
-
-        // Non-static method call
-        myApp.showHelloJava();
-
-        // Static method call
-        showHelloWorld();
-
-        // Non-static method call with parameter
-        myApp.showName("Cherish");
-
-        // Static method call with parameter
-        showAge(20);
-
-        // Static method call with two parameters
-        showNameAndAge("Cherish", 18);
-
-        // Non-static method call with two parameters that returns an int
-        int sum = myApp.add(1, 1);
-        System.out.println(sum);
-
-        // Static method call with two parameters that returns an int
-        int difference = subtract(1, 1);
-        System.out.println(difference);
-
-    }
-
-    // Non-static method
-    void showHelloJava() {
-        System.out.println("Hello Java! This is a non-static method.");
+println("Hello Java! This is a non-static method.");
     }
 
     // Static method
